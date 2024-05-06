@@ -10,7 +10,9 @@ const INITIAL_STATE_CONTACT = {
 const contactsSlice = createSlice({
   name: "contacts",
   initialState: INITIAL_STATE_CONTACT,
-
+  reducers: {
+    resetContacts: () => INITIAL_STATE_CONTACT,
+  },
   extraReducers: (builder) =>
     builder
       .addCase(fetchContacts.pending, (state) => {
@@ -51,5 +53,7 @@ const contactsSlice = createSlice({
         state.error = action.payload;
       }),
 });
+
+export const { resetContacts } = contactsSlice.actions;
 
 export const contactsReducer = contactsSlice.reducer;
