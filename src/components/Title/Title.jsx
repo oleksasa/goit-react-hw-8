@@ -6,7 +6,7 @@ export const Title = () => {
     <S.TitleContainer>
       <S.TitleText>Phonebook</S.TitleText>
       <S.TitleImages
-        src="public/images/phone-call.png"
+        src="/images/phone-call.png"
         alt="phone-image"
       ></S.TitleImages>
     </S.TitleContainer>
