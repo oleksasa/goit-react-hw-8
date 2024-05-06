@@ -15,7 +15,7 @@ export const ImagesContainer = styled.div`
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/public/images/telephone-background-images.webp);
+    url(/images/telephone-background-images.webp);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
