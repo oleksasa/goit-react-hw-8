@@ -22,10 +22,6 @@ const ContactsPage = () => {
 
   useEffect(() => {
     dispatch(fetchContacts());
-    return () => {
-      dispatch(resetContacts());
-      dispatch(resetFilters());
-    };
   }, [dispatch]);
 
   return (

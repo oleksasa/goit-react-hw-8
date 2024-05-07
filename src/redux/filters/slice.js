@@ -11,7 +11,6 @@ const filtersSlice = createSlice({
     changeFilter(state, action) {
       state.name = action.payload;
     },
-    resetFilters: () => INITIAL_STATE_FILTERS,
   },
 });
 
