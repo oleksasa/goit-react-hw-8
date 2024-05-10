@@ -10,8 +10,7 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import { Title } from "../../components/Title/Title";
 import * as S from "./ContactsPage.styled";
 import { Container } from "../../components/Container/Container";
-import { resetContacts } from "../../redux/contacts/slice";
-import { resetFilters } from "../../redux/filters/slice";
+
 
 const ContactsPage = () => {
   const dispatch = useDispatch();

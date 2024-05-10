@@ -1,4 +1,4 @@
-import { Formik } from "formik";
+import { Field, Formik } from "formik";
 import React from "react";
 import * as yup from "yup";
 import * as S from "./ContactForm.styled";
@@ -50,7 +50,7 @@ const ContactForm = () => {
         </S.Label>
         <S.Label>
           <S.Title>Number</S.Title>
-          <FormikInput name="number" component={PhoneNumberInput} />
+          <S.NumberInput name="number" component={PhoneNumberInput} />
           <S.ErrorMessages component="p" name="number" />
         </S.Label>
         <S.AddContactButton type="submit">Add contact</S.AddContactButton>
